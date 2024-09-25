@@ -1,0 +1,60 @@
+body{
+    background-image: url('../../../public/background-login.svg');
+    margin: 0;
+}
+
+
+.loginArea{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    border-top:  0.5px solid rgb(211, 211, 211); 
+
+    position: absolute;
+    bottom: 0;
+}
+
+
+.loginInputs {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.loginInputs button{
+    width: 150px;
+    height: 35px;
+
+    border: none;
+    border-radius: 4px;
+    margin-right: 16px;
+    transition: 1s;
+
+    background-color: #007AFF;
+    color: white;
+    cursor: pointer;
+}
+
+.loginInputs button:hover{
+    background-color: #0050a7;
+    color: rgb(208, 208, 208);
+}
+
+.loginInputs input {
+    width: 175px;
+    height: 30px;
+
+    border: none;
+    background-color: rgb(234, 234, 234);
+
+    padding-right: 16px;
+
+    border-radius: 4px;
+}
