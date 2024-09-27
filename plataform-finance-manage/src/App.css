@@ -1,0 +1,69 @@
+/* App.css */
+
+/* Estilizando a página de login */
+.loginTemplate {
+  display: flex;
+  flex-direction: column; /* Alinhamento vertical */
+  justify-content: center;
+  align-items: center; /* Centraliza o conteúdo */
+  height: 100vh; /* Altura da página */
+  background-color: #ffffff; /* Fundo branco para a página de login */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilizando inputs do formulário */
+.loginTemplate input {
+  margin: 10px 0; /* Margem entre os inputs */
+  padding: 10px; /* Espaçamento interno */
+  width: 100%; /* Largura total */
+  max-width: 300px; /* Largura máxima */
+  border: 1px solid #ccc; /* Borda cinza */
+  border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Estilizando o botão de login */
+.buttonLogin {
+  background-color: #3498db; /* Cor de fundo azul */
+  color: white; /* Cor do texto branco */
+  padding: 10px; /* Espaçamento interno */
+  border: none; /* Remove borda */
+  border-radius: 4px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  transition: background-color 0.3s; /* Transição suave para cor de fundo */
+}
+
+.buttonLogin:hover {
+  background-color: #2980b9; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilizando mensagens de erro ou sucesso */
+.loginTemplate p {
+  margin-top: 10px; /* Margem acima do parágrafo */
+  color: red; /* Cor vermelha para mensagens de erro */
+}
+
+.loginTemplate p.success {
+  color: green; /* Cor verde para mensagens de sucesso */
+}
+
+/* Estilizando o layout da Home */
+.homeLayout {
+  display: flex; /* Flexbox para layout */
+}
+
+/* Estilizando o menu lateral */
+aside {
+  width: 200px; /* Largura do menu */
+  background-color: #333; /* Cor de fundo do menu */
+  color: white; /* Cor do texto do menu */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilizando a área principal */
+main {
+  margin-left: 220px; /* Espaçamento à esquerda para o menu */
+  padding: 20px; /* Espaçamento interno */
+  flex-grow: 1; /* Permite que o main ocupe o espaço restante */
+}
