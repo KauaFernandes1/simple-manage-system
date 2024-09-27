@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const InputLogin = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
+  const navigate = useNavigate(); // Hook para redirecionamento
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,10 +19,13 @@ export const InputLogin = () => {
         body: JSON.stringify({ username, password }),
       });
 
+    // ###### TRATAMENTO DE STATUS #######
+
       const data = await response.json();
 
       if (data.success) {
         setMessage('Login realizado com sucesso!');
+        navigate('/Home');
       } else {
         setMessage('Nome ou senha incorretos');
       }
@@ -47,7 +52,7 @@ export const InputLogin = () => {
         <button type="submit" className='buttonLogin'>Login</button>
       </form>
       {message && <p>{message}</p>}
-    </div>
+    </div> 
   );
 };
 
