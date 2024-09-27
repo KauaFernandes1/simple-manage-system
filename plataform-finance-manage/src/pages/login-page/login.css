@@ -28,24 +28,6 @@ body{
 }
 
 
-.loginInputs button{
-    width: 150px;
-    height: 35px;
-
-    border: none;
-    border-radius: 4px;
-    margin-right: 16px;
-    transition: 1s;
-
-    background-color: #007AFF;
-    color: white;
-    cursor: pointer;
-}
-
-.loginInputs button:hover{
-    background-color: #0050a7;
-    color: rgb(208, 208, 208);
-}
 
 .loginInputs input {
     width: 175px;
@@ -54,7 +36,7 @@ body{
     border: none;
     background-color: rgb(234, 234, 234);
 
-    padding-right: 16px;
+    padding-left: 8px;
 
     border-radius: 4px;
 }

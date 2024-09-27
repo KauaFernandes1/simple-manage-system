@@ -10,6 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/Login" element={<Login />} />
+        {/* <Route path='/Home' element={} /> */}
 
 
       </Routes>
