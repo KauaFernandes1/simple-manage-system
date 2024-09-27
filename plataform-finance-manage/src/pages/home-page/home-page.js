@@ -1,13 +1,12 @@
-import './home-style.css'
 
+import { Link } from 'react-router-dom'
 
-function HomePage() {
+export default function Sobre() {
     return (
-        <div>
-            djndojl
-        </div>
-    )
+        <>
+            <h2>Sobre</h2>
+            <Link to={"/"}>Ir para Home</Link>
+        </>
+
+    );
 }
-
-
-export default HomePage;

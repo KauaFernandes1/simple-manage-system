@@ -25,7 +25,7 @@ export const InputLogin = () => {
 
       if (data.success) {
         setMessage('Login realizado com sucesso!');
-        navigate('/Home');
+        navigate('/kaua');
       } else {
         setMessage('Nome ou senha incorretos');
       }
