@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import './home-styles.css';
 
 const Home = () => {
   // Usando o useEffect para definir o background da rota home
