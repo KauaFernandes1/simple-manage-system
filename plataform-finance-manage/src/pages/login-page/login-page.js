@@ -1,13 +1,13 @@
 import './login.css'
-import '../../atomic/atomo/buttons/buttons'
-import {InputLogin} from '../../atomic/atomo/inputs/inputs'
+import {LoginButton} from '../../atomic/atomo/buttons/buttons-styles.js'
+
 
 function Login () {
     return (
         <div className='loginContainer'>
+            <LoginButton/>
             <div className='loginArea'>
                 <div className='loginInputs'>
-                    <InputLogin/>
                 </div>
             </div>
         </div>
