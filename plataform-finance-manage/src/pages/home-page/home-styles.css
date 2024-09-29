@@ -1,0 +1,10 @@
+/* Definindo que a div ocupará toda a tela */
+.full-page-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% da altura da viewport */
+    text-align: center;
+    color: white;
+  }
+  

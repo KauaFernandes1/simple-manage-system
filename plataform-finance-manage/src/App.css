@@ -1,0 +1,18 @@
+/* Garante que html e body ocupem toda a tela */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Classe para ocupar todo o espaço disponível */
+  .full-page {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #5f97ff, #7bd2fe); /* Exemplo de um gradiente */
+    display: flex; /* Opcional: para centralizar conteúdo */
+    justify-content: center; /* Opcional: para centralizar horizontalmente */
+    align-items: center; /* Opcional: para centralizar verticalmente */
+  }
+
