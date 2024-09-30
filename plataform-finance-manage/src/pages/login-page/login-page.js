@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import LoginSystem from '../../atomic/atomo/login-system/login-system.js';
+import LoginSystem from '../../components/organism/loginpage/login-system.js';
 
 function Login() {
   // Usando o useEffect para aplicar estilos ao carregar o componente

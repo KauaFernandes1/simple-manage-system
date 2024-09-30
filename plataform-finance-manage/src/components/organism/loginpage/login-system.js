@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios'; // Usaremos Axios para realizar as requisições
 import { useNavigate } from 'react-router-dom'; // Importe o hook para navegação
+import ButtonsBase from '../../atomo/buttons/buttons-styles.js'
 
 const LoginSystem = () => {
   // Estado para armazenar os valores de input
@@ -51,7 +52,7 @@ const LoginSystem = () => {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           required
-          style={{ marginBottom: '10px', padding: '10px' }}
+          style={{ marginBottom: '10px', padding: '10px', borderRadius: '4px' }}
         />
         {/* Campo de senha */}
         <input
@@ -60,10 +61,10 @@ const LoginSystem = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
-          style={{ marginBottom: '20px', padding: '10px' }}
+          style={{ marginBottom: '20px', padding: '10px', borderRadius: '4px' }}
         />
         {/* Botão de login */}
-        <button type="submit" style={{ padding: '10px', background: 'black', color: 'white', cursor: 'pointer' }}>
+        <button type="submit" style={{ padding: '10px', background: 'black', color: 'white', cursor: 'pointer'}}>
           Login
         </button>
         {/* Exibe a mensagem de sucesso ou erro */}
