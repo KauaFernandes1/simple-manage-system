@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './navbar.css';
 import imagen from '../../../images/image.png'
 
-const HomeNavbar = () => {
+export const HomeNavbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Gerencia o estado do menu (aberto ou fechado)
 
   return (
@@ -59,4 +59,3 @@ const HomeNavbar = () => {
   );
 };
 
-export default HomeNavbar;

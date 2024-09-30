@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import {HomeNavbar} from '../../components/home-page/navbar/navbar'
+import { Routes } from 'react-router-dom';
 
 const Home = () => {
   // Usando o useEffect para definir o background da rota home
@@ -17,8 +19,12 @@ const Home = () => {
 
   return (
     <div className='full-page-home'>
-      <h1>Bem-vindo à Página Home!</h1>
-      <p>Você foi redirecionado com sucesso após o login.</p>
+      <HomeNavbar/>
+    <Routes>
+      {/* <Route path="/" element={<HomePage />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/settings" element={<Settings />} /> */}
+    </Routes>
     </div>
   );
 };
