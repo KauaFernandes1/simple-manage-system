@@ -1,0 +1,99 @@
+/* Container principal do sidebar */
+.sidebar {
+    height: 100vh; /* Altura total da tela */
+    background-color: #000000; /* Cor de fundo escuro */
+    color: white; /* Cor do texto */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: fixed;
+    transition: width 0.3s ease; /* Transição suave ao expandir/retrair */
+  }
+  
+  /* Menu lateral fechado */
+  .sidebar-closed {
+    width: 60px; /* Largura quando o menu está fechado */
+  }
+  
+  /* Menu lateral aberto */
+  .sidebar-open {
+    width: 250px; /* Largura quando o menu está expandido */
+  }
+  
+  /* Estilo do cabeçalho do menu */
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .sidebar-logo {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .sidebar-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Título de cada seção do menu */
+  .menu-title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #ffffff; /* Cor do título do menu */
+  }
+  
+  /* Itens de menu */
+  .menu-item {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: flex-start; /* Alinhamento à esquerda */
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  /* Ícones do menu */
+  .menu-icon {
+    margin-right: 10px;
+  }
+  
+  /* Efeito de hover no item de menu */
+  .menu-item:hover {
+    background-color: #007AFF;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Contador de mensagens */
+  .message-count {
+    background-color: #A6E22D;
+    color: black;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  /* Ajustes de layout responsivo */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-content {
+    transition: margin-left 0.3s ease;
+  }
+  
+  .main-content-closed {
+    margin-left: 60px; /* Ajuste de margem quando o menu está fechado */
+  }
+  
+  .main-content-open {
+    margin-left: 250px; /* Ajuste de margem quando o menu está aberto */
+  }
+  
