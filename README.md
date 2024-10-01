@@ -17,25 +17,33 @@ This platform is open source and the goal is to provide a free product for my co
 - HTTP PROTOCOL
 - Phosphor Icon
 
-## Instalação
-Para rodar o projeto localmente, siga os seguintes passos:
+## Installation
+To run the project locally, follow these steps:
 
-1. Clone o repositório:
+1. Clone the repository:
 
     ```bash
+    git clone https://github.com/KauaFernandes1/simple-manage-system.git
     ```
 
-2. Instale as dependências:
+2. Install the dependences:
 
     ```bash
     npm install styled-components phosphor-react react-route-dom
     ```
 
-3. Inicie o servidor:
+3. Go to a directory:
 
+    ```bash
+    cd './plataform-finance-manage/
+    ```
+
+4. Start the server:
     ```bash
     npm start
     ```
+
+5. 
 
 ## Contribuindo
 Se desejar contribuir, siga as etapas abaixo:
