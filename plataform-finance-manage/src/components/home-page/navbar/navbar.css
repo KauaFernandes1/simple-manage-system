@@ -7,7 +7,9 @@
     flex-direction: column;
     padding: 20px;
     position: fixed;
-    transition: width 0.3s ease; /* Transição suave ao expandir/retrair */
+    transition: width 0.5s ease; /* Transição suave ao expandir/retrair */
+    border-radius: 0px 24px 0px 0px;
+
   }
   
   /* Menu lateral fechado */
@@ -84,6 +86,7 @@
     margin: 0;
     padding: 0;
   }
+  
   
   .main-content {
     transition: margin-left 0.3s ease;
