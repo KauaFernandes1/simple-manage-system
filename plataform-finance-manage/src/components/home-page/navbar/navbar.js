@@ -20,7 +20,7 @@ export const HomeNavbar = () => {
       <span className="sidebar-logo">
         <img style={{width: '50px'}} src={imagen} alt="Logo Empresa" className="logo-image" />
       </span>
-      {isOpen && <h1 className="sidebar-title">VINMA TECHNOLOGY</h1>} {/* Ajusta para o nome da sua empresa */}
+      {isOpen && <h1 className="sidebar-title">VINMA</h1>} {/* Ajusta para o nome da sua empresa */}
     </div>
     
     {/* Conteúdo do menu (personalizar conforme necessário) */}

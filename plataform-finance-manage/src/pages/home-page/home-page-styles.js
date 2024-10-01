@@ -19,7 +19,7 @@ padding: 0px;
 
 export const Content = styled.div`
 flex: 1; /* Ocupar o restante do espaço */
-background: linear-gradient(to right, #ffffff, #bababa); /* Background da parte vermelha */
+background: linear-gradient(to right, #ffffff, #ffffff); /* Background da parte vermelha */
 padding: 20px;
 `;
 
@@ -29,11 +29,35 @@ width: 30%;
 height: 250px;
 background: #ffffff;
 border: 1px solid #ECECEC;
-border-radius: 8px
+border-radius: 8px;
 `;
 
+export const ContainerSearchInput = styled.div`
+width: 100%
+background-color: transparent;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 8px;
+`
+
+export const SearchInputComponent = styled.input`
+width: 400px;
+height: 35px;
+background-color: #ECECEC;
+margin-bottom: 32px;
+border: none;
+border-radius: 8px;
+outline: none;
+padding-left:12px;
+
+`
 
 
+
+
+// ########## PARTE CARD SALDO ##############
 
 // DUMMY SERVER SALDO
 export const SaldoCard = () => {
@@ -56,15 +80,21 @@ export const SaldoCard = () => {
   };
 
 
+export const StyleSaldoVision = styled.div`
+margin-left: 24px;
+`
+
+
+
 
 export const ComponentSaldoVision = () => {
     return (
         <StyleBalanceVision>
-            <div>
-
-            </div>
-            <div><SaldoCard/></div>
-            <div></div>
+            {/* Container principal CARD SALDO */}
+            <StyleSaldoVision> 
+                <SaldoCard/>
+                 
+            </StyleSaldoVision>
         </StyleBalanceVision>
     )
 }

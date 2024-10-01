@@ -1,8 +1,9 @@
 /* Container principal do sidebar */
 .sidebar {
     height: 100vh; /* Altura total da tela */
-    background-color: #000000; /* Cor de fundo escuro */
-    color: white; /* Cor do texto */
+    background-color: #ffffff; /* Cor de fundo escuro */
+    border: 1px solid rgb(218, 218, 218);
+    color: rgb(25, 25, 25); /* Cor do texto */
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -43,13 +44,13 @@
   .menu-title {
     margin-bottom: 15px;
     font-size: 14px;
-    color: #ffffff; /* Cor do título do menu */
+    color: rgb(25, 25, 25); /* Cor do título do menu */
   }
   
   /* Itens de menu */
   .menu-item {
     text-decoration: none;
-    color: white;
+    color: rgb(25, 25, 25);
     padding: 10px 15px;
     border-radius: 8px;
     margin: 5px 0;
@@ -79,6 +80,7 @@
     font-size: 12px;
     font-weight: bold;
     margin-left: 10px;
+    
   }
   
   /* Ajustes de layout responsivo */
