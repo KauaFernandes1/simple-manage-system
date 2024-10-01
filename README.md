@@ -1,18 +1,21 @@
-# Plataforma de gestão
-Está plataforma é open-source e está em desenvolvimento para crescimento pessoal.
+# Management platform
+This platform is open source and the goal is to provide a free product for my company that I just created called VINMAN TECHNOLOGY. Initially, I would like to create a management platform so that other people could use and improve it, thus helping the community.
 
 
 
-## Funcionalidades
+## Features
+- API integrated login
+- Sidebar with options 
 - 
-- 
-- 
 
-## Tecnologias Utilizadas
+## Technologies used
 - Node.js
 - React
 - Javascript
 - Styled Components
+- API REST
+- HTTP PROTOCOL
+- Phosphor Icon
 
 ## Instalação
 Para rodar o projeto localmente, siga os seguintes passos:
@@ -25,7 +28,7 @@ Para rodar o projeto localmente, siga os seguintes passos:
 2. Instale as dependências:
 
     ```bash
-    npm install
+    npm install styled-components phosphor-react react-route-dom
     ```
 
 3. Inicie o servidor:
