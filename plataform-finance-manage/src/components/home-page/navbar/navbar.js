@@ -2,8 +2,15 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 import imagen from '../../../images/image.png'
+import { House, ChartPie, Users, Receipt, BellRinging, Barcode, Gear, Vault } from "phosphor-react";
 
-export const HomeNavbar = () => {
+
+
+
+// export const StyleSidebar = 
+
+
+export const HomeSidebar = () => {
   const [isOpen, setIsOpen] = useState(false); // Gerencia o estado do menu (aberto ou fechado)
 
   return (
@@ -27,23 +34,23 @@ export const HomeNavbar = () => {
     <div className="menu">
       <h2 className="menu-title">{isOpen && "MENU"}</h2>
       <Link to="/overview" className="menu-item active">
-        <span className="menu-icon">⬤</span> {isOpen && "Home"}
+        <span className="menu-icon"><House size={24}/></span> {isOpen && "Home"}
       </Link>
       <Link to="/statistics" className="menu-item">
-        <span className="menu-icon">📊</span> {isOpen && "Metricas"}
+        <span className="menu-icon"><ChartPie size={24}/></span> {isOpen && "Metricas"}
       </Link>
       <Link to="/customers" className="menu-item">
-        <span className="menu-icon">👥</span> {isOpen && "Compartilhar"}
+        <span className="menu-icon"><Users size={24}/></span> {isOpen && "Compartilhar"}
       </Link>
       <Link to="/product" className="menu-item">
-        <span className="menu-icon">📦</span> {isOpen && "Extratos"}
+        <span className="menu-icon"><Receipt size={24}/></span> {isOpen && "Extratos"}
       </Link>
       <Link to="/messages" className="menu-item">
-        <span className="menu-icon">✉️</span> {isOpen && "Lembretes"}
+        <span className="menu-icon"><BellRinging size={24}/></span> {isOpen && "Lembretes"}
         {isOpen && <span className="message-count">13</span>}
       </Link>
       <Link to="/transactions" className="menu-item">
-        <span className="menu-icon">💳</span> {isOpen && "Contas"}
+        <span className="menu-icon"><Barcode size={24}/></span> {isOpen && "Contas"}
       </Link>
     </div>
 
@@ -51,10 +58,10 @@ export const HomeNavbar = () => {
     <div className="menu">
       <h2 className="menu-title">{isOpen && "GERAL"}</h2>
       <Link to="/settings" className="menu-item">
-        <span className="menu-icon">⚙️</span> {isOpen && "Configurações"}
+        <span className="menu-icon"><Gear size={24}/></span> {isOpen && "Configurações"}
       </Link>
       <Link to="/security" className="menu-item">
-        <span className="menu-icon">🔒</span> {isOpen && "Reportar"}
+        <span className="menu-icon"><Vault size={24}/></span> {isOpen && "Cofre"}
       </Link>
     </div>
   </div>
