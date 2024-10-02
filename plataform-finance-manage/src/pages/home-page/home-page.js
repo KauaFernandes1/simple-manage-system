@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect} from 'react';
 import {HomeSidebar} from '../../components/home-page/navbar/navbar'
 import { Routes } from 'react-router-dom';
-import * as DashboardTemplates from '../../components/home-page/home-content/dashboard/objective-dashboard'
 import * as LayoutPage from '../../components/home-page/home-content/_home-layout/home-layout.js'
 import * as ValuesCards from '../../components/home-page/home-content/value-cards/value-cards.js'
 import * as SearchBarTemplate from '../../components/home-page/home-content/search-bar/search-bar'
+import *as DashboardComponent from '../../components/home-page/home-content/dashboard/other.js'
+
 
 
 const Home = () => {
@@ -33,8 +34,6 @@ const Home = () => {
         <LayoutPage.Content>
           <SearchBarTemplate.ContainerSearchInput>
             <SearchBarTemplate.SearchInputComponent placeholder='Procurar'/>
-            {/* <Funnel size={24} color={'black'} /> */} 
-
           </SearchBarTemplate.ContainerSearchInput>
           {/* 3 CARDS SEGUIDOS */}
           <ValuesCards.FirstContainerDashboard>
@@ -43,13 +42,8 @@ const Home = () => {
               <ValuesCards.BannerThree/>
           </ValuesCards.FirstContainerDashboard>
 
+            <DashboardComponent.ContainerSecondDashboard/>
 
-          {/* DIV CLASSE ABAIXO */}
-          <ValuesCards.ContainerSecondDashboard>
-                <DashboardTemplates.CardWithChart/>
-          </ValuesCards.ContainerSecondDashboard>
-
-        
 
         </LayoutPage.Content>
       <Routes>
