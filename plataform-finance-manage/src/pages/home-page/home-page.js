@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import {HomeSidebar} from '../../components/home-page/navbar/navbar'
+import {HomeSidebar} from '../../components/_home-page/navbar/navbar.js'
 import { Routes } from 'react-router-dom';
-import * as DashboardTemplates from '../../components/home-page/home-content/dashboard/objective-dashboard'
-import * as LayoutPage from '../../components/home-page/home-content/_home-layout/home-layout.js'
-import * as ValuesCards from '../../components/home-page/home-content/value-cards/value-cards.js'
-import * as SearchBarTemplate from '../../components/home-page/home-content/search-bar/search-bar'
+import * as DashboardTemplates from '../../components/_home-page/home-content/dashboard/objective-dashboard.js'
+import * as LayoutPage from '../../components/_home-page/home-content/_home-layout/home-layout.js'
+import * as ValuesCards from '../../components/_home-page/home-content/value-cards/value-cards.js'
+import * as SearchBarTemplate from '../../components/_home-page/home-content/search-bar/search-bar.js'
 
 
 const Home = () => {
@@ -34,8 +34,9 @@ const Home = () => {
           <SearchBarTemplate.ContainerSearchInput>
             <SearchBarTemplate.SearchInputComponent placeholder='Procurar'/>
             {/* <Funnel size={24} color={'black'} /> */} 
-
           </SearchBarTemplate.ContainerSearchInput>
+
+
           {/* 3 CARDS SEGUIDOS */}
           <ValuesCards.FirstContainerDashboard>
             <ValuesCards.ComponentSaldoVision/> 
@@ -46,7 +47,7 @@ const Home = () => {
 
           {/* DIV CLASSE ABAIXO */}
           <ValuesCards.ContainerSecondDashboard>
-                <DashboardTemplates.CardWithChart/>
+            <DashboardTemplates.CardWithChart/>
           </ValuesCards.ContainerSecondDashboard>
 
         
