@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
-import imagen from '../../../images/image.png'
+import imagen from '../../../../images/image.png'
 import { House, ChartPie, Users, Receipt, BellRinging, Barcode, Gear, Vault } from "phosphor-react";
 
 
@@ -39,7 +39,7 @@ export const HomeSidebar = () => {
       <Link to="/home/metricas" className="menu-item">
         <span className="menu-icon"><ChartPie size={24}/></span> {isOpen && "Metricas"}
       </Link>
-      <Link to="/customers" className="menu-item">
+      <Link to="/home/compartilhar" className="menu-item">
         <span className="menu-icon"><Users size={24}/></span> {isOpen && "Compartilhar"}
       </Link>
       <Link to="/product" className="menu-item">

@@ -1,6 +1,7 @@
 import { Doughnut } from 'react-chartjs-2';
 import 'chart.js/auto';
 import styled from 'styled-components'
+import * as Styles from './styles-objective-dashboard'
 
 export const CardWithChart = () => {
     // Dados e configuração do gráfico
@@ -33,11 +34,12 @@ export const CardWithChart = () => {
   
   
     return (
-      <div style={{width: '25%', height: "400px", backgroundColor: 'white', borderRadius: '8px', boxShadow: '0px 6px 24px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.08)'}}>
+      <Styles.CardDashboard>
+        <h2 style={{paddingLeft: '20px'}}>Objetivos</h2>
         <div style={{ width: '300px', height: '200px', padding: '20px'  }}>
         <Doughnut data={data} options={options} />
       </div>
-    </div>
+      </Styles.CardDashboard>
     );
   }
 

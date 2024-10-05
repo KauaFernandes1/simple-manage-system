@@ -3,25 +3,28 @@ import axios from 'axios'; // Usaremos Axios para realizar as requisições
 import { useNavigate } from 'react-router-dom'; // Importe o hook para navegação
 
 const LoginSystem = () => {
-  // armazena os valores de input
+  // Estado para armazenar os valores de input
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [message, setMessage] = useState(''); 
+  const [message, setMessage] = useState(''); // Mensagem de erro ou sucesso
 
-  const navigate = useNavigate(); 
+  const navigate = useNavigate(); // Crie uma instância do hook de navegação
 
+  // Função para gerenciar a submissão do formulário
   const handleSubmit = async (event) => {
-    event.preventDefault(); 
+    event.preventDefault(); // Impede o comportamento padrão do formulário
 
     try {
-      const response = await axios.post('http://localhost:5000/login', { username, password });
+      // Realiza a requisição POST para o servidor Express
+      const response = await axios.post('http://localhost:5000/data', { username, password });
 
+      // Se a resposta for sucesso, redirecionar para a rota "home"
       if (response.data.success) {
         setMessage(response.data.message);
-        navigate('/home');
+        navigate('/home'); // Redireciona para a rota /home
       }
     } catch (error) {
-      
+      // Se houver erro, exibir a mensagem do backend
       setMessage(error.response.data.message || 'Erro ao fazer login');
     }
   };
@@ -32,9 +35,9 @@ const LoginSystem = () => {
       <div style={{ display: 'flex', alignItems: 'center' }}>
         {/* Logo da empresa */}
         {/* <img
-          src=''
+          src='' // Substitua pela URL da sua logo
           alt=""
-          style={{ width: '100px', height: '100px', marginRight: '20px' }} 
+          style={{ width: '100px', height: '100px', marginRight: '20px' }} // Ajuste o tamanho e a margem conforme necessário
         /> */}
         {/* Formulário de login */}
         <form
@@ -86,6 +89,5 @@ const LoginSystem = () => {
     
   );
 };
-
 
 export default LoginSystem;

@@ -3,16 +3,6 @@ import React, { useEffect, useState } from 'react';
 
 
 
-
-export const FirstContainerDashboard = styled.div`
-width: 100%;
-height: auto;
-display: flex;
-flex-direction: row;
-gap: 18px;
-`
-
-
 export const StyleBalanceVision = styled.div`
 display: flex;
 width: 30%;
@@ -24,6 +14,30 @@ box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 
 
 `;
 
+
+
+
+export const ContainerSearchInput = styled.div`
+width: 100%
+background-color: transparent;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 8px;
+`;
+
+export const SearchInputComponent = styled.input`
+width: 400px;
+height: 35px;
+background-color: #ECECEC;
+margin-bottom: 32px;
+border: none;
+border-radius: 8px;
+outline: none;
+padding-left:12px;
+
+`;
 
 
 
@@ -72,10 +86,11 @@ export const SaldoCard = () => {
 
 export const ComponentSaldoVision = () => {
     return (
-        <SaldoStyle>
+        <StyleBalanceVision>
             {/* Container principal CARD SALDO */}
                 <SaldoCard/>
-        </SaldoStyle>
+  
+        </StyleBalanceVision>
     )
 }
 
@@ -89,23 +104,9 @@ padding-left: 15px;
  & span{
   font-size: 32px;
  }
+
+
 `;
-
-export const SaldoStyle = styled.div`
-width: 30%;
-height: 130px;
-border-radius: 8px;
-background: linear-gradient(135deg, #0072ff 0%, #00c6ff 100%);
-color: white;
-box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
-padding-left: 15px;
- & span{
-  font-size: 32px;
- }
-`;
-
-
-
 
 
 export const SecondBanner = () => {
@@ -135,10 +136,9 @@ export const ContainerSecondDashboard = styled.div`
 width: 100%;
 height: auto;
 margin-top: 1rem;
-display: flex;
-flex-direction: row;
-gap: 16px;
 `
+
+
 
 
 

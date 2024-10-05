@@ -7,9 +7,6 @@ import { House, ChartPie, Users, Receipt, BellRinging, Barcode, Gear, Vault } fr
 
 
 
-// export const StyleSidebar = 
-
-
 export const HomeSidebar = () => {
   const [isOpen, setIsOpen] = useState(false); // Gerencia o estado do menu (aberto ou fechado)
 
@@ -33,10 +30,10 @@ export const HomeSidebar = () => {
     {/* Conteúdo do menu (personalizar conforme necessário) */}
     <div className="menu">
       <h2 className="menu-title">{isOpen && "MENU"}</h2>
-      <Link to="/home" className="menu-item active">
+      <Link to="/overview" className="menu-item active">
         <span className="menu-icon"><House size={24}/></span> {isOpen && "Home"}
       </Link>
-      <Link to="/home/metricas" className="menu-item">
+      <Link to="/statistics" className="menu-item">
         <span className="menu-icon"><ChartPie size={24}/></span> {isOpen && "Metricas"}
       </Link>
       <Link to="/customers" className="menu-item">
