@@ -16,7 +16,7 @@ const LoginSystem = () => {
 
     try {
       // Realiza a requisição POST para o servidor Express
-      const response = await axios.post('http://localhost:5000/data', { username, password });
+      const response = await axios.post('http://localhost:5000/login/data', { username, password });
 
       // Se a resposta for sucesso, redirecionar para a rota "home"
       if (response.data.success) {
