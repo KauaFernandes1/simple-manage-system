@@ -9,7 +9,7 @@ const users = {
 };
 
 // endpoint de autenticação
-router.post('/', (req, res) => {
+router.post('/data', (req, res) => {
   const { username, password } = req.body;
 
   if (username === users.username && password === users.password) {
