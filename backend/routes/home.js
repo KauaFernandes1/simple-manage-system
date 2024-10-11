@@ -16,4 +16,29 @@ router.get('/profile', (req, res) => {
   res.json({ message: 'Esta é a página de perfil' });
 });
 
+// sub-rota /home/compartilhar
+router.get('/profile', (req, res) => {
+  res.json({ message: 'Esta é a página de compartilhar' });
+});
+
+// sub-rota /home/extratos
+router.get('/profile', (req, res) => {
+  res.json({ message: 'Esta é a página de extratos' });
+});
+
+// sub-rota /home/lembretes
+router.get('/profile', (req, res) => {
+  res.json({ message: 'Esta é a página de extratos' });
+});
+
+// sub-rota /home/lembretes
+router.get('/profile', (req, res) => {
+  res.json({ message: 'Esta é a página de extratos' });
+});
+
+// sub-rota /home/lembretes
+router.get('/profile', (req, res) => {
+  res.json({ message: 'Esta é a página de extratos' });
+});
+
 export default router;
