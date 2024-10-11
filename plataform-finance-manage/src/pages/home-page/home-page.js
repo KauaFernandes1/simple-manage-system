@@ -6,6 +6,8 @@ import * as LayoutPage from '../../components/_home-page/home-content/_home-layo
 import * as ValuesCards from '../../components/_home-page/home-content/value-cards/value-cards.js';
 import * as SearchBarTemplate from '../../components/_home-page/home-content/search-bar/search-bar.js';
 import Metricas from '../../components/_home-page/home-content/sub-routes/metricas-route/metricas.js';
+import Compartilhar from '../../components/_home-page/home-content/sub-routes/compartilhar-routes/compartilhar.js'
+import Extratos from '../../components/_home-page/home-content/sub-routes/extratos-routes/extratos.js'
 // import * as LayoutMetricas from '../../components/_home-page/home-content/sub-routes/metricas-route/components-metric/layout/principal-container.js';
 import {CardActions} from '../../components/_home-page/home-content/card-actions/card-actions.js'
 import {CardContas} from '../../components/_home-page/home-content/card-contas/card-contas.js'
@@ -73,13 +75,20 @@ const Home = () => {
                 <Metricas />
             }
           />
-          {/* <Route
+          <Route
             path="compartilhar"
             element={
-
+              <Compartilhar/>
+            }
+            
+          />
+          <Route
+            path="extratos"
+            element={
+              <Extratos/>
             }
           
-          /> */}
+          /> 
 
         </Routes>
       </LayoutPage.Content>

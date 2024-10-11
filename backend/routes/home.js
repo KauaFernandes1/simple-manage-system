@@ -17,27 +17,27 @@ router.get('/profile', (req, res) => {
 });
 
 // sub-rota /home/compartilhar
-router.get('/profile', (req, res) => {
+router.get('/compartilhar', (req, res) => {
   res.json({ message: 'Esta é a página de compartilhar' });
 });
 
 // sub-rota /home/extratos
-router.get('/profile', (req, res) => {
+router.get('/extratos', (req, res) => {
   res.json({ message: 'Esta é a página de extratos' });
 });
 
 // sub-rota /home/lembretes
-router.get('/profile', (req, res) => {
+router.get('/lembretes', (req, res) => {
   res.json({ message: 'Esta é a página de extratos' });
 });
 
-// sub-rota /home/lembretes
-router.get('/profile', (req, res) => {
+// sub-rota /home/contas
+router.get('/contas', (req, res) => {
   res.json({ message: 'Esta é a página de extratos' });
 });
 
-// sub-rota /home/lembretes
-router.get('/profile', (req, res) => {
+// sub-rota /home/configuraçao
+router.get('/configuraçao', (req, res) => {
   res.json({ message: 'Esta é a página de extratos' });
 });
 
