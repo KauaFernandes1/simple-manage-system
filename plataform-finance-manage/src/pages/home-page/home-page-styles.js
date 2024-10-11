@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import React, { useEffect, useState } from 'react';
-
+import { colors } from '../../components/_atomic-design/_librarys/colors'
 
 
 export const StyleBalanceVision = styled.div`
 display: flex;
 width: 30%;
 height: 130px;
-background: #007AFF;
+background: $(colors.primaryDetails);
 color: white;
 border-radius: 8px;
 box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.08);

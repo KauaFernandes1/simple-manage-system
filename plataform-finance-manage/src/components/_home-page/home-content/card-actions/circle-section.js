@@ -12,7 +12,7 @@ export const SpeedActionCard = () => {
             {/* CIRCLE DEPOSIT */}
             <cardStyles.IndividualCircle>
                 <cardStyles.Circle>
-                    <Money size={23} />
+                    <Money size={23} href='/'/>
                 </cardStyles.Circle>
                 <p>Transferir</p>
             </cardStyles.IndividualCircle>

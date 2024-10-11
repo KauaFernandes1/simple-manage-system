@@ -9,6 +9,8 @@ import Metricas from '../../components/_home-page/home-content/sub-routes/metric
 // import * as LayoutMetricas from '../../components/_home-page/home-content/sub-routes/metricas-route/components-metric/layout/principal-container.js';
 import {CardActions} from '../../components/_home-page/home-content/card-actions/card-actions.js'
 import {CardContas} from '../../components/_home-page/home-content/card-contas/card-contas.js'
+// import VerticalProgressBar from '../../components/_home-page/home-content/dashboard-energy/dashboard-energy.js'
+import CardComponent from '../../components/_home-page/home-content/banner-marketing/banner-marketing.js'
 
 
 const Home = () => {
@@ -54,6 +56,7 @@ const Home = () => {
                   <DashboardTemplates.CardWithChart />
                   <div style={{display: 'flex', flexDirection: 'column', gap: '16px'}}>
                   <CardActions/>
+                  <CardComponent/>
                   </div>
                   <CardContas/>
                 </ValuesCards.ContainerSecondDashboard>

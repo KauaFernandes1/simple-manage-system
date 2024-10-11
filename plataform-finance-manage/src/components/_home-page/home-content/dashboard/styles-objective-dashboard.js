@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+// import { Colors } from '../../../_atomic-design/atom/colors/colors'
 
 
 export const CardDashboard = styled.div`
