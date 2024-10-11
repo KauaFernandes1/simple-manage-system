@@ -42,14 +42,14 @@ export const HomeSidebar = () => {
       <Link to="/home/compartilhar" className="menu-item">
         <span className="menu-icon"><Users size={24}/></span> {isOpen && "Compartilhar"}
       </Link>
-      <Link to="/product" className="menu-item">
+      <Link to="home/extratos" className="menu-item">
         <span className="menu-icon"><Receipt size={24}/></span> {isOpen && "Extratos"}
       </Link>
-      <Link to="/messages" className="menu-item">
+      <Link to="/home/lembretes" className="menu-item">
         <span className="menu-icon"><BellRinging size={24}/></span> {isOpen && "Lembretes"}
         {isOpen && <span className="message-count">13</span>}
       </Link>
-      <Link to="/transactions" className="menu-item">
+      <Link to="/home/contas" className="menu-item">
         <span className="menu-icon"><Barcode size={24}/></span> {isOpen && "Contas"}
       </Link>
     </div>
