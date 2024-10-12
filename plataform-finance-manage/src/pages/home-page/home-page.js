@@ -57,7 +57,11 @@ const Home = () => {
                 <ValuesCards.ContainerSecondDashboard>
                   <DashboardTemplates.CardWithChart />
                   <div style={{display: 'flex', flexDirection: 'column', gap: '16px'}}>
-                  <CardActions/>
+                    <div style={{display: 'flex', flexDirection: 'row'}}>
+                      <CardActions/>
+                      
+                    </div>
+                  
                   <CardComponent/>
                   </div>
                   <CardContas/>
