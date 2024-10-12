@@ -9,7 +9,7 @@ const CardContainer = styled.div`
   border-radius: 8px; /* Bordas arredondadas */
   box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
   background-color: ${colors.primaryBg}; /* Usando a cor de fundo primária da biblioteca */
-  width: 100%;
+  width: 525px;
   height: 100%;
 `;
 
@@ -19,15 +19,15 @@ const ImageContainer = styled.div`
 
 const Image = styled.img`
   width: auto;
-  height: 120px;
-  padding: 20px;
+  height: 160px;
+  padding: 15px;
   object-fit: cover; /* Ajustar a imagem */
   border-radius: 8px; /* Borda arredondada para a imagem */
 `;
 
 const ContentContainer = styled.div`
   flex: 2; /* Tamanho flexível para o conteúdo */
-  margin-left: 0px; /* Espaçamento entre a imagem e o texto */
+  margin-left: 10px; /* Espaçamento entre a imagem e o texto */
 `;
 
 const Title = styled.h2`
@@ -69,9 +69,9 @@ export const CardComponent = () => {
 
       {/* Área para o título, subtítulo e botão */}
       <ContentContainer>
-        <Title>Título do Card</Title>
-        <Subtitle>Esse é um subtítulo descritivo para o card.</Subtitle>
-        <Button>Clique Aqui</Button>
+        <Title>Você no controle!</Title>
+        <Subtitle>Personalize sua plataforma do seu jeito. Ajuste as <br/>funcionalidades para atender às suas necessidades</Subtitle>
+        <Button>Saiba mais</Button>
       </ContentContainer>
     </CardContainer>
   );

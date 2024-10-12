@@ -64,7 +64,11 @@ const Home = () => {
                 <ValuesCards.ContainerSecondDashboard>
                   <DashboardTemplates.CardWithChart />
                   <div style={{display: 'flex', flexDirection: 'column', gap: '16px'}}>
-                  <CardActions/>
+                    <div style={{display: 'flex', flexDirection: 'row'}}>
+                      <CardActions/>
+                      
+                    </div>
+                  
                   <CardComponent/>
                   </div>
                   <CardContas/>
@@ -85,46 +89,10 @@ const Home = () => {
           <Route
             path="compartilhar"
             element={
-              <Compartilhar/>
-            }
-            
-          />
-          <Route
-            path="extratos"
-            element={
-              <Extratos/>
-            }
-          
-          />
-          <Route
-            path="lembretes"
-            element={
-              <Lembretes/>
-            }
-          
-          />
-          <Route
-            path="contas"
-            element={
-              <Contas/>
-            }
-          
-          />
-          <Route
-            path="configurações"
-            element={
-              <Configuracoes/>
-            }
-          
-          />
-          <Route
-            path="cofre"
-            element={
-              <Cofre/>
-            }
-          
-          />
 
+            }
+          
+          /> */}
 
         </Routes>
       </LayoutPage.Content>
