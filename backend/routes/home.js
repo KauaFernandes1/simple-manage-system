@@ -41,4 +41,9 @@ router.get('/configuraçao', (req, res) => {
   res.json({ message: 'Esta é a página de extratos' });
 });
 
+// sub-rota /home/cofre
+router.get('/cofre', (req, res) => {
+  res.json({ message: 'Esta é a página de extratos' });
+});
+
 export default router;

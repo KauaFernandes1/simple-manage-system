@@ -42,7 +42,7 @@ export const HomeSidebar = () => {
       <Link to="/home/compartilhar" className="menu-item">
         <span className="menu-icon"><Users size={24}/></span> {isOpen && "Compartilhar"}
       </Link>
-      <Link to="home/extratos" className="menu-item">
+      <Link to="/home/extratos" className="menu-item">
         <span className="menu-icon"><Receipt size={24}/></span> {isOpen && "Extratos"}
       </Link>
       <Link to="/home/lembretes" className="menu-item">
@@ -57,10 +57,10 @@ export const HomeSidebar = () => {
     {/* Seção Geral */}
     <div className="menu">
       <h2 className="menu-title">{isOpen && "GERAL"}</h2>
-      <Link to="/settings" className="menu-item">
+      <Link to="/home/configurações" className="menu-item">
         <span className="menu-icon"><Gear size={24}/></span> {isOpen && "Configurações"}
       </Link>
-      <Link to="/security" className="menu-item">
+      <Link to="/home/cofre" className="menu-item">
         <span className="menu-icon"><Vault size={24}/></span> {isOpen && "Cofre"}
       </Link>
     </div>

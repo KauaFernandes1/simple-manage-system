@@ -1,6 +1,6 @@
 import {ContainerMetricas} from './container-styles.js'
 
-const Contas = () => {
+const Configuracoes = () => {
     return (
         <ContainerMetricas>
             kedmkine
@@ -9,4 +9,4 @@ const Contas = () => {
 }
 
 
-export default Contas;
+export default Configuracoes;

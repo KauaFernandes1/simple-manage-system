@@ -57,7 +57,7 @@ export const HomeSidebar = () => {
     {/* Seção Geral */}
     <div className="menu">
       <h2 className="menu-title">{isOpen && "GERAL"}</h2>
-      <Link to="/configuraçoes" className="menu-item">
+      <Link to="/settings" className="menu-item">
         <span className="menu-icon"><Gear size={24}/></span> {isOpen && "Configurações"}
       </Link>
       <Link to="/security" className="menu-item">
