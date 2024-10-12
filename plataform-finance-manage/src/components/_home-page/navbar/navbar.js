@@ -42,7 +42,7 @@ export const HomeSidebar = () => {
       <Link to="home/compartilhar" className="menu-item">
         <span className="menu-icon"><Users size={24}/></span> {isOpen && "Compartilhar"}
       </Link>
-      <Link to="home/extratos" className="menu-item">
+      <Link to="home/extra" className="menu-item">
         <span className="menu-icon"><Receipt size={24}/></span> {isOpen && "Extratos"}
       </Link>
       <Link to="home/lembretes" className="menu-item">
