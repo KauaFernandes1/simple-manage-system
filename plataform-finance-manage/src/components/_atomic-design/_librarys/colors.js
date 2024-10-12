@@ -6,7 +6,7 @@ export const colors = {
   darkBg: "#343a40",            // Fundo escuro
 
   // Cores de texto (Text)
-  primaryText: "#212529",       // Texto primário (escuro)
+  primaryText: "#0C0C0C",       // Texto primário (escuro)
   secondaryText: "#6c757d",     // Texto secundário (cinza)
   lightText: "#f8f9fa",         // Texto em fundos escuros (claro)
   linkText: "#007BFF",          // Texto de links (azul)

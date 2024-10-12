@@ -69,9 +69,9 @@ export const CardComponent = () => {
 
       {/* Área para o título, subtítulo e botão */}
       <ContentContainer>
-        <Title>Título do Card</Title>
-        <Subtitle>Esse é um subtítulo descritivo para o card.</Subtitle>
-        <Button>Clique Aqui</Button>
+        <Title>Você no controle!</Title>
+        <Subtitle>Esse é um subtítulo descritivo<br/>para o card.</Subtitle>
+        <Button>Saiba mais</Button>
       </ContentContainer>
     </CardContainer>
   );
