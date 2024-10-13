@@ -5,9 +5,13 @@ import * as DashboardTemplates from '../../components/_home-page/home-content/da
 import * as LayoutPage from '../../components/_home-page/home-content/_home-layout/home-layout.js';
 import * as ValuesCards from '../../components/_home-page/home-content/value-cards/value-cards.js';
 import * as SearchBarTemplate from '../../components/_home-page/home-content/search-bar/search-bar.js';
+
+
 import Metricas from '../../components/_home-page/home-content/sub-routes/metricas-route/metricas.js';
 import Compartilhar from '../../components/_home-page/home-content/sub-routes/compartilhar-routes/compartilhar.js'
 import Extratos from '../../components/_home-page/home-content/sub-routes/extratos-routes/extratos.js'
+import Cofre from '../../components/_home-page/home-content/sub-routes/cofre-routes/cofre.js'
+
 // import * as LayoutMetricas from '../../components/_home-page/home-content/sub-routes/metricas-route/components-metric/layout/principal-container.js';
 import {CardActions} from '../../components/_home-page/home-content/card-actions/card-actions.js'
 import {CardContas} from '../../components/_home-page/home-content/card-contas/card-contas.js'
@@ -87,9 +91,9 @@ const Home = () => {
             
           />
           <Route
-            path="extratos"
+            path="cofre"
             element={
-              <Extratos/>
+              <Cofre/>
             }
           
           /> 
