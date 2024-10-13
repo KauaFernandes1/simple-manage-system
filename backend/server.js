@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import loginRouter from './routes/login.js'; // Importa o router de login
 import homeRouter from './routes/home.js'
+import cofreRouter from './routes/cofre.js'
 
 const app = express();
 const PORT = 5000;
