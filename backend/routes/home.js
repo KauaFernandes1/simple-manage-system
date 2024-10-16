@@ -41,4 +41,34 @@ router.get('/configuraçao', (req, res) => {
   res.json({ message: 'Esta é a página de extratos' });
 });
 
+// sub-rota /home/cofre
+router.get('/cofre', (req, res) => {
+  res.json({ message: 'Esta é a página de extratos' });
+});
+
+// sub-rota /home/compartilhar
+router.get('/compartilhar', (req, res) => {
+  res.json({ message: 'Esta é a página de compartilhar' });
+});
+
+// sub-rota /home/extratos
+router.get('/extratos', (req, res) => {
+  res.json({ message: 'Esta é a página de extratos' });
+});
+
+// sub-rota /home/lembretes
+router.get('/lembretes', (req, res) => {
+  res.json({ message: 'Esta é a página de extratos' });
+});
+
+// sub-rota /home/contas
+router.get('/contas', (req, res) => {
+  res.json({ message: 'Esta é a página de extratos' });
+});
+
+// sub-rota /home/configuraçao
+router.get('/configuraçao', (req, res) => {
+  res.json({ message: 'Esta é a página de extratos' });
+});
+
 export default router;

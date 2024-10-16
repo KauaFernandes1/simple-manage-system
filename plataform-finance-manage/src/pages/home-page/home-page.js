@@ -10,8 +10,6 @@ import * as SearchBarTemplate from '../../components/_home-page/home-content/sea
 import Metricas from '../../components/_home-page/home-content/sub-routes/metricas-route/metricas.js';
 import Compartilhar from '../../components/_home-page/home-content/sub-routes/compartilhar-routes/compartilhar.js'
 import Extratos from '../../components/_home-page/home-content/sub-routes/extratos-routes/extratos.js'
-import Cofre from '../../components/_home-page/home-content/sub-routes/cofre-routes/cofre.js'
-
 // import * as LayoutMetricas from '../../components/_home-page/home-content/sub-routes/metricas-route/components-metric/layout/principal-container.js';
 import {CardActions} from '../../components/_home-page/home-content/card-actions/card-actions.js'
 import {CardContas} from '../../components/_home-page/home-content/card-contas/card-contas.js'
@@ -89,6 +87,13 @@ const Home = () => {
               <Compartilhar/>
             }
             
+          />
+          <Route
+            path="extratos"
+            element={
+              <Extratos/>
+            }
+          
           />
           <Route
             path="cofre"
