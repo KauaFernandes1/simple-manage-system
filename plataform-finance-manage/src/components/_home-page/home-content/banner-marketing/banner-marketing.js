@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { colors } from '../../../_atomic-design/_librarys/colors.js';
+import Button from '../../../_atomic-design/atom/button.js'
 
 // Definindo os estilos via Styled Components
 const CardContainer = styled.div`
@@ -42,24 +43,13 @@ const Subtitle = styled.p`
   margin-bottom: 15px;
 `;
 
-const Button = styled.button`
-  width: 200px;
-  height: 35px;
-  font-size: 14px;
-  color: ${colors.primaryButtonText}; /* Usando a cor de texto do botão primário */
-  background-color: ${colors.primaryButtonBg}; /* Usando a cor de fundo do botão primário */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 
-  &:hover {
-    background-color: ${colors.secondaryDetails}; /* Usando cor dos detalhes ao passar o mouse */
-    color: #E6E6E6;
-  }
-`;
+
 
 export const CardComponent = () => {
+  const handleClick = (message) => {
+    console.log(message);
+  }
   return (
     <CardContainer>
       {/* Área para a ilustração */}
@@ -71,7 +61,7 @@ export const CardComponent = () => {
       <ContentContainer>
         <Title>Você no controle!</Title>
         <Subtitle>Personalize sua plataforma do seu jeito. Ajuste as <br/>funcionalidades para atender às suas necessidades</Subtitle>
-        <Button>Saiba mais</Button>
+        <Button variant="default" onClick={() => handleClick('Default button clicked')}>Saiba mais</Button>
       </ContentContainer>
     </CardContainer>
   );
