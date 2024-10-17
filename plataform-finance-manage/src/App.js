@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Login from './pages/login-page/login-page.js'
-import Home from './pages/home-page/home-page.js'
+import Home from './components/_atomic-design/pages/home-page/home-page.js'
 // import {Principal} from './components/_home-page/home-content/_subRoutes/statistic/_statistic.js'
 
 

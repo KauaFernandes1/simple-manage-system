@@ -65,6 +65,17 @@ export const CardComponent = () => {
       </ContentContainer>
     </CardContainer>
   );
+
+
+
+
+
+
+
+
+
+
+  
 };
 
 export default CardComponent;

@@ -1,21 +1,21 @@
 import React, { useEffect } from 'react';
-import { HomeSidebar } from '../../components/_home-page/home-content/sidebar/navbar.js';
+import {Sidebar} from '../../organism/sidebar.js'
 import { Routes, Route } from 'react-router-dom';
-import * as DashboardTemplates from '../../components/_home-page/home-content/dashboard/objective-dashboard.js';
-import * as LayoutPage from '../../components/_home-page/home-content/_home-layout/home-layout.js';
-import * as ValuesCards from '../../components/_home-page/home-content/value-cards/value-cards.js';
-import * as SearchBarTemplate from '../../components/_home-page/home-content/search-bar/search-bar.js';
+import * as DashboardTemplates from '../../../_home-page/home-content/dashboard/objective-dashboard.js';
+import * as LayoutPage from '../../../_home-page/home-content/_home-layout/home-layout.js';
+import * as ValuesCards from '../../../_home-page/home-content/value-cards/value-cards.js';
+import * as SearchBarTemplate from '../../../_home-page/home-content/search-bar/search-bar.js';
 
 
-import Metricas from '../../components/_home-page/home-content/sub-routes/metricas-route/metricas.js';
-import Compartilhar from '../../components/_home-page/home-content/sub-routes/compartilhar-routes/compartilhar.js'
-import Extratos from '../../components/_home-page/home-content/sub-routes/extratos-routes/extratos.js'
-import Cofre from '../../components/_home-page/home-content/sub-routes/cofre-routes/cofre.js'
+import Metricas from '../../../_home-page/home-content/sub-routes/metricas-route/metricas.js';
+import Compartilhar from '../../../_home-page/home-content/sub-routes/compartilhar-routes/compartilhar.js'
+import Extratos from '../../../_home-page/home-content/sub-routes/extratos-routes/extratos.js'
+import Cofre from '../../../_home-page/home-content/sub-routes/cofre-routes/cofre.js'
 // import * as LayoutMetricas from '../../components/_home-page/home-content/sub-routes/metricas-route/components-metric/layout/principal-container.js';
-import {CardActions} from '../../components/_home-page/home-content/card-actions/card-actions.js'
-import {CardContas} from '../../components/_home-page/home-content/card-contas/card-contas.js'
+import {CardActions} from '../../../_home-page/home-content/card-actions/card-actions.js'
+import {CardContas} from '../../../_home-page/home-content/card-contas/card-contas.js'
 // import VerticalProgressBar from '../../components/_home-page/home-content/dashboard-energy/dashboard-energy.js'
-import CardComponent from '../../components/_home-page/home-content/banner-marketing/banner-marketing.js'
+import CardComponent from '../../../_home-page/home-content/banner-marketing/banner-marketing.js'
 
 
 const Home = () => {
@@ -33,7 +33,7 @@ const Home = () => {
     <LayoutPage.Container>
       {/* Sidebar e Navegação */}
       <LayoutPage.Sidebar>
-        <HomeSidebar />
+        <Sidebar />
       </LayoutPage.Sidebar>
 
       {/* Conteúdo Principal */}
