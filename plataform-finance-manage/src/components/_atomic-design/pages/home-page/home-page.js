@@ -1,22 +1,19 @@
+// Home.js
 import React, { useEffect } from 'react';
-import {Sidebar} from '../../organism/sidebar.js'
 import { Routes, Route } from 'react-router-dom';
+import {Sidebar} from '../../organism/sidebar'; // Importando o sidebar
+import SearchBar from '../../molecules/search_bar.js'; // A barra de busca como molécula
+import SaldoCard from '../../organism/saldo-card.js'; // O card de saldo como organismo
 import * as DashboardTemplates from '../../../_home-page/home-content/dashboard/objective-dashboard.js';
 import * as LayoutPage from '../../../_home-page/home-content/_home-layout/home-layout.js';
 import * as ValuesCards from '../../../_home-page/home-content/value-cards/value-cards.js';
-import * as SearchBarTemplate from '../../../_home-page/home-content/search-bar/search-bar.js';
-
-
+import {CardActions} from '../../../_home-page/home-content/card-actions/card-actions.js';
+import {CardContas} from '../../../_home-page/home-content/card-contas/card-contas.js';
+import CardComponent from '../../../_home-page/home-content/banner-marketing/banner-marketing.js';
 import Metricas from '../../../_home-page/home-content/sub-routes/metricas-route/metricas.js';
-import Compartilhar from '../../../_home-page/home-content/sub-routes/compartilhar-routes/compartilhar.js'
-import Extratos from '../../../_home-page/home-content/sub-routes/extratos-routes/extratos.js'
-import Cofre from '../../../_home-page/home-content/sub-routes/cofre-routes/cofre.js'
-// import * as LayoutMetricas from '../../components/_home-page/home-content/sub-routes/metricas-route/components-metric/layout/principal-container.js';
-import {CardActions} from '../../../_home-page/home-content/card-actions/card-actions.js'
-import {CardContas} from '../../../_home-page/home-content/card-contas/card-contas.js'
-// import VerticalProgressBar from '../../components/_home-page/home-content/dashboard-energy/dashboard-energy.js'
-import CardComponent from '../../../_home-page/home-content/banner-marketing/banner-marketing.js'
-
+import Compartilhar from '../../../_home-page/home-content/sub-routes/compartilhar-routes/compartilhar.js';
+import Extratos from '../../../_home-page/home-content/sub-routes/extratos-routes/extratos.js';
+import Cofre from '../../../_home-page/home-content/sub-routes/cofre-routes/cofre.js';
 
 const Home = () => {
   useEffect(() => {
@@ -38,9 +35,7 @@ const Home = () => {
 
       {/* Conteúdo Principal */}
       <LayoutPage.Content>
-        <SearchBarTemplate.ContainerSearchInput>
-          <SearchBarTemplate.SearchInputComponent placeholder="Procurar" />
-        </SearchBarTemplate.ContainerSearchInput>
+        <SearchBar />
 
         {/* Rotas para Sub-Rotas */}
         <Routes>
@@ -51,7 +46,7 @@ const Home = () => {
               <>
                 {/* 3 CARDS SEGUIDOS */}
                 <ValuesCards.FirstContainerDashboard>
-                  <ValuesCards.ComponentSaldoVision />
+                  <SaldoCard />
                   <ValuesCards.SecondBanner />
                   <ValuesCards.BannerThree />
                 </ValuesCards.FirstContainerDashboard>
@@ -59,51 +54,23 @@ const Home = () => {
                 {/* Dashboard com Gráfico */}
                 <ValuesCards.ContainerSecondDashboard>
                   <DashboardTemplates.CardWithChart />
-                  <div style={{display: 'flex', flexDirection: 'column', gap: '16px'}}>
-                    <div style={{display: 'flex', flexDirection: 'row'}}>
-                      <CardActions/>
-                      
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                    <div style={{ display: 'flex', flexDirection: 'row' }}>
+                      <CardActions />
                     </div>
-                  
-                  <CardComponent/>
+                    <CardComponent />
                   </div>
-                  <CardContas/>
+                  <CardContas />
                 </ValuesCards.ContainerSecondDashboard>
-                
-                
               </>
             }
           />
 
           {/* Sub-rota /home/metricas */}
-          <Route
-            path="metricas"
-            element={
-                <Metricas />
-            }
-          />
-          <Route
-            path="compartilhar"
-            element={
-              <Compartilhar/>
-            }
-            
-          />
-          <Route
-            path="extratos"
-            element={
-              <Extratos/>
-            }
-          
-          />
-          <Route
-            path="cofre"
-            element={
-              <Cofre/>
-            }
-          
-          /> 
-
+          <Route path="metricas" element={<Metricas />} />
+          <Route path="compartilhar" element={<Compartilhar />} />
+          <Route path="extratos" element={<Extratos />} />
+          <Route path="cofre" element={<Cofre />} />
         </Routes>
       </LayoutPage.Content>
     </LayoutPage.Container>
